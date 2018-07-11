@@ -1,0 +1,29 @@
+{
+    "include": [
+        "src/**/*"
+    ],
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "skipLibCheck": true,
+        "allowJs": true,
+        "outDir": "output",
+        "lib": [
+            "es2015.promise",
+            "es7",
+        ],
+        "baseUrl": "src",
+        "paths": {
+            "First/*": [
+                "first-entry/*"
+            ],
+            "Second/*": [
+                "second-entry/*"
+            ],
+        },
+    },
+    "files": [
+        "src/main/index.ts",
+        "src/first-entry/index.ts",
+    ]
+}
